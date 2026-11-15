@@ -144,7 +144,7 @@ Add screenshots demonstrating the completed application and Git collaboration:
 
 ## Repository
 
-GitHub: [https://github.com/USERNAME/food-ordering-system](https://github.com/USERNAME/food-ordering-system)
+GitHub: [https://github.com/Entropy420/food-ordering-system]
 
 ---
 
