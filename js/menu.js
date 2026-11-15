@@ -125,3 +125,47 @@ const FOOD_ITEMS = [
       "https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=700&q=80",
   },
 ];
+
+// Formatting price in Indian Rupees format
+
+const formatPrice = (amount) => `₹${amount.toLocaleString("en-IN")}`;
+
+// Function to render the menu items on the page
+function renderMenu(items = FOOD_ITEMS) {
+  const grid = document.getElementById("menu-grid");
+  const empty = document.getElementById("empty-menu");
+  if (!grid) return;
+  grid.innerHTML = items
+    .map(
+      (item) => `
+    <article class="food-card">
+      <div class="relative">
+        <img src="${item.image}" alt="${item.name}" loading="lazy" onerror="this.src='https://placehold.co/700x450/f5f5f4/78716c?text=Food+Image'">
+        <span class="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-stone-700">★ ${item.rating}</span>
+      </div>
+      <div class="p-5">
+        <div class="flex items-start justify-between gap-2"><h3 class="font-extrabold">${item.name}</h3><span class="shrink-0 text-sm font-extrabold">${formatPrice(item.price)}</span></div>
+        <p class="mt-2 min-h-10 text-sm leading-5 text-stone-500">${item.description}</p>
+        <div class="mt-4 flex items-center justify-between"><span class="text-xs font-bold uppercase tracking-wider text-orange-600">${item.category}</span><button class="add-button" data-add="${item.id}">＋ Add</button></div>
+      </div>
+    </article>`,
+    )
+    .join("");
+  if (empty) empty.classList.toggle("hidden", items.length !== 0);
+}
+
+// Function to render the category chips on the page
+function renderCategories(active = "All") {
+  const container = document.getElementById("category-list");
+  if (!container) return;
+  const categories = [
+    "All",
+    ...new Set(FOOD_ITEMS.map((item) => item.category)),
+  ];
+  container.innerHTML = categories
+    .map(
+      (category) =>
+        `<button class="category-chip ${category === active ? "active" : ""}" data-category="${category}">${category}</button>`,
+    )
+    .join("");
+}
