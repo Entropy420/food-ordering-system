@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Food Ordering System</title>
+
+    <title>Crave - Online Food Ordering</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,10 +12,113 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <!-- Website content will be added here -->
 
-    <!-- JavaScript files will be connected during development -->
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+      <nav class="container navbar">
+        <a href="#home" class="logo"> crave<span>.</span> </a>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Our Menu</a>
+          <a href="#about">About</a>
+        </div>
+
+        <button id="cart-toggle" class="cart-button" type="button">
+          <span>Cart</span>
+          <span id="cart-count">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-content">
+          <p class="eyebrow">FRESH FOOD, FAST DELIVERY</p>
+
+          <h1>
+            Delicious food,
+            <span>delivered to you.</span>
+          </h1>
+
+          <p class="hero-description">
+            Discover your favourite meals, freshly prepared and delivered
+            straight to your doorstep.
+          </p>
+
+          <a href="#menu" class="primary-button"> Explore Menu </a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1547592180-85f173990554?w=900&q=85"
+            alt="Delicious freshly prepared food"
+          />
+        </div>
+      </section>
+
+      <!-- ================= MENU SECTION ================= -->
+      <section id="menu" class="menu-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">WHAT WOULD YOU LIKE?</p>
+            <h2>Explore our menu</h2>
+            <p>
+              Choose from a variety of freshly prepared meals and delicious
+              treats.
+            </p>
+          </div>
+
+          <!-- Search -->
+          <div class="menu-search">
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Search for your favourite food..."
+              aria-label="Search food"
+            />
+          </div>
+
+          <!-- Food Categories -->
+          <div id="category-list" class="category-list">
+            <button class="category-button active" data-category="All">
+              All
+            </button>
+
+            <button class="category-button" data-category="Pizza">Pizza</button>
+
+            <button class="category-button" data-category="Burgers">
+              Burgers
+            </button>
+
+            <button class="category-button" data-category="Pasta">Pasta</button>
+
+            <button class="category-button" data-category="Indian">
+              Indian
+            </button>
+
+            <button class="category-button" data-category="Desserts">
+              Desserts
+            </button>
+
+            <button class="category-button" data-category="Drinks">
+              Drinks
+            </button>
+          </div>
+
+          <!-- Food Cards Will Be Rendered Here -->
+          <div id="menu-grid" class="menu-grid">
+            <!-- JavaScript will insert food cards here -->
+          </div>
+
+          <!-- Displayed when no food matches the search -->
+          <p id="empty-menu" class="empty-message hidden">
+            No food items found. Try another search.
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
-`
