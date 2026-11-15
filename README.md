@@ -142,12 +142,6 @@ Add screenshots demonstrating the completed application and Git collaboration:
 - Orders are simulated and stored locally in the browser.
 - Food images are loaded from external image sources.
 
-## Repository
-
-GitHub: [https://github.com/USERNAME/food-ordering-system](https://github.com/USERNAME/food-ordering-system)
-
----
-
 **Project:** Online Food Ordering System
 **Course:** SEC101
 **Academic Year:** 2026–2027
