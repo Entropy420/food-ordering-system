@@ -132,7 +132,8 @@ Screenshots demonstrating the completed application:
 
 - Search and category filtering.
 <img width="1600" height="850" alt="Crave's Category Filters" src="https://github.com/user-attachments/assets/734dcbef-1e13-4cf3-9fd7-606f84a37b9d" />
-<img width="1600" height="1152" alt="Crave's Search Feature" src="https://github.com/user-attachments/assets/978dfb2f-3ec5-49e0-aa0a-1eabc6eb4491" />
+<img width="1600" height="978" alt="Crave's Search Feature" src="https://github.com/user-attachments/assets/038a449d-a5d0-48b6-8e95-18e345003a97" />
+
 
 - Shopping cart and quantity controls.
 <img width="1600" height="1110" alt="Crave's Shopping Cart" src="https://github.com/user-attachments/assets/d7d84a28-776e-4f83-9123-63dcd85887bc" />
