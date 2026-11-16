@@ -122,17 +122,27 @@ git log --oneline --graph --all
 
 ## Screenshots
 
-Add screenshots demonstrating the completed application and Git collaboration:
+Screenshots demonstrating the completed application:
 
 - Homepage and navigation.
+<img width="1600" height="895" alt="Crave's HomePage" src="https://github.com/user-attachments/assets/c40c7890-291a-4f3e-b064-be0b4e2b4998" />
+
 - Food menu and food cards.
+<img width="1600" height="1152" alt="Crave's Food Menu" src="https://github.com/user-attachments/assets/5ec8b54d-1554-4e0b-b768-83a5535e587b" />
+
 - Search and category filtering.
+<img width="1600" height="850" alt="Crave's Category Filters" src="https://github.com/user-attachments/assets/734dcbef-1e13-4cf3-9fd7-606f84a37b9d" />
+<img width="1600" height="1152" alt="Crave's Search Feature" src="https://github.com/user-attachments/assets/978dfb2f-3ec5-49e0-aa0a-1eabc6eb4491" />
+
 - Shopping cart and quantity controls.
+<img width="1600" height="1110" alt="Crave's Shopping Cart" src="https://github.com/user-attachments/assets/d7d84a28-776e-4f83-9123-63dcd85887bc" />
+<img width="1600" height="976" alt="Crave's Quality Controls" src="https://github.com/user-attachments/assets/79a4ceba-3c98-406d-aa47-d9292e430d22" />
+
 - Bill calculation and checkout.
+<img width="1600" height="974" alt="Crave's Checkout Pop-up" src="https://github.com/user-attachments/assets/cfe81fa7-6a7b-43a1-9d70-3d4eb9d8e351" />
+
 - Order confirmation.
-- GitHub branches and commits.
-- Pull requests and code reviews.
-- Merge conflict and its resolution.
+<img width="1365" height="423" alt="Order Confirmation Pop-up" src="https://github.com/user-attachments/assets/4a7daee8-f596-4db3-aeb6-14bc1d81a13e" />
 
 ## Limitations
 
